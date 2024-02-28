@@ -1,0 +1,759 @@
+{
+    "sendMessage": {
+        "required": [
+            "chat_id",
+            "text"
+        ],
+        "optional": [
+            "message_thread_id",
+            "parse_mode",
+            "entities",
+            "link_preview_options",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "forwardMessage": {
+        "required": [
+            "chat_id",
+            "from_chat_id",
+            "message_id"
+        ],
+        "optional": [
+            "message_thread_id",
+            "disable_notification",
+            "protect_content"
+        ]
+    },
+    "forwardMessages": {
+        "required": [
+            "chat_id",
+            "from_chat_id",
+            "message_ids"
+        ],
+        "optional": [
+            "message_thread_id",
+            "disable_notification",
+            "protect_content"
+        ]
+    },
+    "copyMessage": {
+        "required": [
+            "chat_id",
+            "from_chat_id",
+            "message_id"
+        ],
+        "optional": [
+            "message_thread_id",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "copyMessages": {
+        "required": [
+            "chat_id",
+            "from_chat_id",
+            "message_ids"
+        ],
+        "optional": [
+            "message_thread_id",
+            "disable_notification",
+            "protect_content",
+            "remove_caption"
+        ]
+    },
+    "sendPhoto": {
+        "required": [
+            "chat_id",
+            "photo"
+        ],
+        "optional": [
+            "message_thread_id",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "has_spoiler",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendAudio": {
+        "required": [
+            "chat_id",
+            "audio"
+        ],
+        "optional": [
+            "message_thread_id",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "duration",
+            "performer",
+            "title",
+            "thumbnail",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendDocument": {
+        "required": [
+            "chat_id",
+            "document"
+        ],
+        "optional": [
+            "message_thread_id",
+            "thumbnail",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "disable_content_type_detection",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendVideo": {
+        "required": [
+            "chat_id",
+            "video"
+        ],
+        "optional": [
+            "message_thread_id",
+            "duration",
+            "width",
+            "height",
+            "thumbnail",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "has_spoiler",
+            "supports_streaming",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendAnimation": {
+        "required": [
+            "chat_id",
+            "animation"
+        ],
+        "optional": [
+            "message_thread_id",
+            "duration",
+            "width",
+            "height",
+            "thumbnail",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "has_spoiler",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendVoice": {
+        "required": [
+            "chat_id",
+            "voice"
+        ],
+        "optional": [
+            "message_thread_id",
+            "caption",
+            "parse_mode",
+            "caption_entities",
+            "duration",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendVideoNote": {
+        "required": [
+            "chat_id",
+            "video_note"
+        ],
+        "optional": [
+            "message_thread_id",
+            "duration",
+            "length",
+            "thumbnail",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendMediaGroup": {
+        "required": [
+            "chat_id",
+            "media"
+        ],
+        "optional": [
+            "message_thread_id",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters"
+        ]
+    },
+    "sendLocation": {
+        "required": [
+            "chat_id",
+            "latitude",
+            "longitude"
+        ],
+        "optional": [
+            "message_thread_id",
+            "horizontal_accuracy",
+            "live_period",
+            "heading",
+            "proximity_alert_radius",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendVenue": {
+        "required": [
+            "chat_id",
+            "latitude",
+            "longitude",
+            "title",
+            "address"
+        ],
+        "optional": [
+            "message_thread_id",
+            "foursquare_id",
+            "foursquare_type",
+            "google_place_id",
+            "google_place_type",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendContact": {
+        "required": [
+            "chat_id",
+            "phone_number",
+            "first_name"
+        ],
+        "optional": [
+            "message_thread_id",
+            "last_name",
+            "vcard",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendPoll": {
+        "required": [
+            "chat_id",
+            "question",
+            "options"
+        ],
+        "optional": [
+            "message_thread_id",
+            "is_anonymous",
+            "type",
+            "allows_multiple_answers",
+            "correct_option_id",
+            "explanation",
+            "explanation_parse_mode",
+            "explanation_entities",
+            "open_period",
+            "close_date",
+            "is_closed",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendDice": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": [
+            "message_thread_id",
+            "emoji",
+            "disable_notification",
+            "protect_content",
+            "reply_parameters",
+            "reply_markup"
+        ]
+    },
+    "sendChatAction": {
+        "required": [
+            "chat_id",
+            "action"
+        ],
+        "optional": [
+            "message_thread_id"
+        ]
+    },
+    "setMessageReaction": {
+        "required": [
+            "chat_id",
+            "message_id"
+        ],
+        "optional": [
+            "reaction",
+            "is_big"
+        ]
+    },
+    "getUserProfilePhotos": {
+        "required": [
+            "user_id"
+        ],
+        "optional": [
+            "offset",
+            "limit"
+        ]
+    },
+    "getFile": {
+        "required": [
+            "file_id"
+        ],
+        "optional": []
+    },
+    "banChatMember": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": [
+            "until_date",
+            "revoke_messages"
+        ]
+    },
+    "unbanChatMember": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": [
+            "only_if_banned"
+        ]
+    },
+    "restrictChatMember": {
+        "required": [
+            "chat_id",
+            "user_id",
+            "permissions"
+        ],
+        "optional": [
+            "use_independent_chat_permissions",
+            "until_date"
+        ]
+    },
+    "promoteChatMember": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": [
+            "is_anonymous",
+            "can_manage_chat",
+            "can_delete_messages",
+            "can_manage_video_chats",
+            "can_restrict_members",
+            "can_promote_members",
+            "can_change_info",
+            "can_invite_users",
+            "can_post_stories",
+            "can_edit_stories",
+            "can_delete_stories",
+            "can_post_messages",
+            "can_edit_messages",
+            "can_pin_messages",
+            "can_manage_topics"
+        ]
+    },
+    "setChatAdministratorCustomTitle": {
+        "required": [
+            "chat_id",
+            "user_id",
+            "custom_title"
+        ],
+        "optional": []
+    },
+    "banChatSenderChat": {
+        "required": [
+            "chat_id",
+            "sender_chat_id"
+        ],
+        "optional": []
+    },
+    "unbanChatSenderChat": {
+        "required": [
+            "chat_id",
+            "sender_chat_id"
+        ],
+        "optional": []
+    },
+    "setChatPermissions": {
+        "required": [
+            "chat_id",
+            "permissions"
+        ],
+        "optional": [
+            "use_independent_chat_permissions"
+        ]
+    },
+    "exportChatInviteLink": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "createChatInviteLink": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": [
+            "name",
+            "expire_date",
+            "member_limit",
+            "creates_join_request"
+        ]
+    },
+    "editChatInviteLink": {
+        "required": [
+            "chat_id",
+            "invite_link"
+        ],
+        "optional": [
+            "name",
+            "expire_date",
+            "member_limit",
+            "creates_join_request"
+        ]
+    },
+    "revokeChatInviteLink": {
+        "required": [
+            "chat_id",
+            "invite_link"
+        ],
+        "optional": []
+    },
+    "approveChatJoinRequest": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": []
+    },
+    "declineChatJoinRequest": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": []
+    },
+    "setChatPhoto": {
+        "required": [
+            "chat_id",
+            "photo"
+        ],
+        "optional": []
+    },
+    "deleteChatPhoto": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "setChatTitle": {
+        "required": [
+            "chat_id",
+            "title"
+        ],
+        "optional": []
+    },
+    "setChatDescription": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": [
+            "description"
+        ]
+    },
+    "pinChatMessage": {
+        "required": [
+            "chat_id",
+            "message_id"
+        ],
+        "optional": [
+            "disable_notification"
+        ]
+    },
+    "unpinChatMessage": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": [
+            "message_id"
+        ]
+    },
+    "unpinAllChatMessages": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "leaveChat": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "getChat": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "getChatAdministrators": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "getChatMemberCount": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "getChatMember": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": []
+    },
+    "setChatStickerSet": {
+        "required": [
+            "chat_id",
+            "sticker_set_name"
+        ],
+        "optional": []
+    },
+    "deleteChatStickerSet": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "createForumTopic": {
+        "required": [
+            "chat_id",
+            "name"
+        ],
+        "optional": [
+            "icon_color",
+            "icon_custom_emoji_id"
+        ]
+    },
+    "editForumTopic": {
+        "required": [
+            "chat_id",
+            "message_thread_id"
+        ],
+        "optional": [
+            "name",
+            "icon_custom_emoji_id"
+        ]
+    },
+    "closeForumTopic": {
+        "required": [
+            "chat_id",
+            "message_thread_id"
+        ],
+        "optional": []
+    },
+    "reopenForumTopic": {
+        "required": [
+            "chat_id",
+            "message_thread_id"
+        ],
+        "optional": []
+    },
+    "deleteForumTopic": {
+        "required": [
+            "chat_id",
+            "message_thread_id"
+        ],
+        "optional": []
+    },
+    "unpinAllForumTopicMessages": {
+        "required": [
+            "chat_id",
+            "message_thread_id"
+        ],
+        "optional": []
+    },
+    "editGeneralForumTopic": {
+        "required": [
+            "chat_id",
+            "name"
+        ],
+        "optional": []
+    },
+    "closeGeneralForumTopic": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "reopenGeneralForumTopic": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "hideGeneralForumTopic": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "unhideGeneralForumTopic": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "unpinAllGeneralForumTopicMessages": {
+        "required": [
+            "chat_id"
+        ],
+        "optional": []
+    },
+    "answerCallbackQuery": {
+        "required": [
+            "callback_query_id"
+        ],
+        "optional": [
+            "text",
+            "show_alert",
+            "url",
+            "cache_time"
+        ]
+    },
+    "getUserChatBoosts": {
+        "required": [
+            "chat_id",
+            "user_id"
+        ],
+        "optional": []
+    },
+    "setMyCommands": {
+        "required": [
+            "commands"
+        ],
+        "optional": [
+            "scope",
+            "language_code"
+        ]
+    },
+    "deleteMyCommands": {
+        "required": [],
+        "optional": [
+            "scope",
+            "language_code"
+        ]
+    },
+    "getMyCommands": {
+        "required": [],
+        "optional": [
+            "scope",
+            "language_code"
+        ]
+    },
+    "setMyName": {
+        "required": [],
+        "optional": [
+            "name",
+            "language_code"
+        ]
+    },
+    "getMyName": {
+        "required": [],
+        "optional": [
+            "language_code"
+        ]
+    },
+    "setMyDescription": {
+        "required": [],
+        "optional": [
+            "description",
+            "language_code"
+        ]
+    },
+    "getMyDescription": {
+        "required": [],
+        "optional": [
+            "language_code"
+        ]
+    },
+    "setMyShortDescription": {
+        "required": [],
+        "optional": [
+            "language_code"
+        ]
+    },
+    "getMyShortDescription": {
+        "required": [],
+        "optional": [
+            "language_code"
+        ]
+    },
+    "setChatMenuButton": {
+        "required": [],
+        "optional": [
+            "chat_id",
+            "menu_button"
+        ]
+    },
+    "getChatMenuButton": {
+        "required": [],
+        "optional": [
+            "chat_id"
+        ]
+    },
+    "setMyDefaultAdministratorRights": {
+        "required": [],
+        "optional": [
+            "rights",
+            "for_channels"
+        ]
+    },
+    "getMyDefaultAdministratorRights": {
+        "required": [],
+        "optional": [
+            "for_channels"
+        ]
+    }
+}
